@@ -31,12 +31,12 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-2. Install dependencies:
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Set up environment variables:
+4. Set up environment variables:
 Create a `.env` file in the project root. Add your OpenAI API and Weights and Biases keys:
 ```
 OPENAI_API_KEY=your_api_key_here
