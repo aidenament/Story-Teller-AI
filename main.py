@@ -26,7 +26,7 @@ the story in parts - without losing context or having to keep the entire story i
 """
 
 
-MODEL = "gpt-4.1"
+MODEL = "gpt-3.5-turbo"
 
 logging.getLogger("gql.transport.requests").setLevel(logging.WARNING)
 logging.getLogger("weave").setLevel(logging.WARNING)

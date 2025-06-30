@@ -4,7 +4,7 @@ An interactive AI-powered storytelling application featuring Boop Boop the Story
 
 ## Overview
 
-Story Teller is a multi-agent AI system that creates personalized, age-appropriate stories through an interactive conversation with children. The application uses a sophisticated orchestration of AI agents to generate, refine, and narrate stories that capture children's imagination while teaching valuable lessons. The default model for this project is gpt-3.5-turbo. The handoff and tool design is a little different than what I would have done for more capable models because 3.5 turbo is very dumb and needs lots of hand holding and reminders to not make mistakes. Tool usage and handoffs are still possible, but the scope of what can be done is more limited. You see MAJOR improvements just by swapping to 4.1 so I recommend doing so if that is at all possible.  
+Story Teller is a multi-agent AI system that creates personalized, age-appropriate stories through an interactive conversation with children. The application uses a sophisticated orchestration of AI agents to generate, refine, and read stories that capture children's imagination. The default model for this project is gpt-3.5-turbo.
 
 ## Features
 
@@ -23,6 +23,12 @@ Story Teller is a multi-agent AI system that creates personalized, age-appropria
 ```bash
 git clone https://github.com/aidenament/story_teller.git
 cd story_teller
+```
+
+2. Make a virtual enviornment
+```bash
+python -m venv venv
+source venv/bin/activate
 ```
 
 2. Install dependencies:
@@ -52,20 +58,6 @@ The application will:
 
 To exit the application, type `quit`, `exit`, or `bye`.
 
-## Project Structure
-
-```
-story_teller/
-├── main.py                 # Main application entry point
-├── config.py              # Configuration settings
-├── requirements.txt       # Python dependencies
-├── functions/            # File operation utilities
-│   ├── get_file_content.py
-│   ├── get_files_info.py
-│   └── write_file_content.py
-└── story/               # Story content directory
-    └── outline.txt      # Generated story outlines
-```
 
 ## How It Works
 
@@ -79,15 +71,13 @@ story_teller/
 
 ## Future Enhancements
 
-As noted in the code comments, potential improvements include:
-- Enhanced file system usage for character profiles, settings, and events
-- Multi-part story narration for longer tales
-- Specialized agents for targeted story element improvements
-- Shared memory system for complex story development
+If I were to spend 2 more hours on this project, there are two things I would work on. 
+
+1. Improve the judge/outline system. The primary tools we give the agents are to read/write files in the story directory, but currently they only use the outline.txt file. I think they could do a lot more with these tools and have a file for each character, setting, ect. The story folder would act as an entire project repository they could refer to. This folder works as a shared memory system which could allow specialized agents to read/write files in the story directory and make targeted changes to characters/events.
+
+2. Improve the story telling agent. Right now stories are told in a single message, but especially for longer stories, it would be better to break them up into story parts. This could work well with improvements to the planning system, where agents could write to event1.txt, event2.txt, ect, and then the story teller agent could read those files individually and tell the story in parts - without losing context or having to keep the entire story in memory.
 
 ## Requirements
-
-- Python 3.7+
 - OpenAI API key
-- Weights and Biases API key (if using weave)
+- Weights and Biases API key (for using weave)
 - Dependencies listed in `requirements.txt`
