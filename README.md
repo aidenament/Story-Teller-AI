@@ -4,7 +4,7 @@ An interactive AI-powered storytelling application featuring Boop Boop the Story
 
 ## Overview
 
-Story Teller is a multi-agent AI system that creates personalized, age-appropriate stories through an interactive conversation with children. The application uses a sophisticated orchestration of AI agents to generate, refine, and read stories that capture children's imagination. The default model for this project is gpt-3.5-turbo.
+Story Teller is a multi-agent AI system that creates personalized, age-appropriate stories through an interactive conversation with children. The application uses a sophisticated orchestration of AI agents to generate, refine, and tell stories that capture children's imagination. The default model for this project is gpt-3.5-turbo.
 
 ## Features
 
@@ -54,7 +54,7 @@ The application will:
 1. Introduce Boop Boop the Storytelling Elephant
 2. Ask if you have a specific story idea or would like a suggestion
 3. Create a story outline based on your preferences
-4. Narrate the complete story with engaging details and pacing
+4. Tell the complete story with engaging details and pacing
 
 To exit the application, type `quit`, `exit`, or `bye`.
 
@@ -66,7 +66,7 @@ To exit the application, type `quit`, `exit`, or `bye`.
 1. **Story Selection**: Boop Boop interacts with the child to understand their story preferences
 2. **Outline Creation**: Based on the child's input, a detailed story outline is created
 3. **Outline Enhancement**: The Secret Story Judge silently improves the outline with rich details
-4. **Story Narration**: Boop Boop reads the enhanced outline and narrates a complete, engaging story
+4. **Story Narration**: Boop Boop reads the enhanced outline and tells a complete, engaging story
 5. **Paced Delivery**: The story is delivered in paragraphs with natural pacing for better engagement
 
 ## Future Enhancements
