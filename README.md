@@ -1,6 +1,6 @@
 # Story Teller 🐘
 
-An interactive AI-powered storytelling application featuring Boop Boop the Storytelling Elephant, designed to create and narrate engaging stories for children aged 5-10 years old. This is an interview project for Hippocratic AI.
+An interactive AI-powered storytelling application featuring Boop Boop the Storytelling Elephant, designed to create and narrate engaging stories for children aged 5-10 years old.
 
 ## Overview
 
